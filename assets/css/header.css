@@ -1,0 +1,378 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 991;
+    transform: translateY(-100%);
+    transition: 0.6s;
+}
+
+
+.home-main-active .hide-header {
+    transform: translateY(-100%);
+    transition: 0.6s;
+}
+header.header-show  {
+    transform: translateY(0);
+}
+header.hidden  {
+    transform: translateY(-100%);
+
+}
+
+header.scrolled{
+    background: #46515D66;
+    backdrop-filter: blur(25px);
+
+}
+
+.header-main {
+    padding: 48px 0 42px;
+    border-bottom: 1px solid #FFFFFF59;
+}
+
+.logo {
+    white-space: nowrap;
+}
+
+.header-menu {
+    gap: 140px;
+}
+
+.mobile-menu {
+    gap: 140px;
+}
+
+.mobile-menu ul {
+    gap: 55px;
+    transition: 0.3s;
+
+}
+
+.mobile-menu li {
+    display: flex;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.mobile-menu li:after {
+    content: "";
+    position: absolute;
+    bottom: -66px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.mobile-menu a {
+    color: #FFFFFFA6;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.1px;
+    transition: 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.mobile-menu a:hover {
+    color: #FFFFFF;
+}
+
+.mobile-menu .active-menu a {
+    color: #FFFFFF;
+}
+
+.mobile-menu li:hover:after {
+    opacity: 1;
+}
+
+.mobile-menu .active-menu:after {
+    opacity: 1;
+
+}
+
+
+.btn {
+    transition: 0.3s;
+    padding: 24px 36px;
+    background: #C49D76A6;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    letter-spacing: 1.3px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: #C49D76;
+}
+
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.close-menu span {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.close-menu span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 3px;
+    position: relative;
+}
+
+.close-menu span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -3px;
+}
+
+.close-menu span:nth-child(3) {
+    display: none;
+}
+
+.body_fix {
+    overflow: hidden!important;
+}
+.body_fix .home-page{
+    overflow: hidden!important;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 1800px) {
+    .mobile-menu ul {
+        gap: 35px;
+    }
+
+    .header-menu {
+        gap: 50px;
+    }
+
+    .mobile-menu {
+        gap: 50px;
+    }
+
+    .header-main {
+        padding: 30px 0;
+    }
+
+    .mobile-menu li:after {
+        bottom: -54px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .header-main {
+        padding: 20px 0;
+    }
+
+    .mobile-menu li:after {
+        bottom: -44px;
+    }
+
+    .mobile-menu a {
+        letter-spacing: 0;
+    }
+
+
+}
+
+@media (max-width: 1399px) {
+    .btn {
+        padding: 16px 24px;
+    }
+
+    .mobile-menu ul {
+        gap: 27px;
+    }
+
+    .header-menu {
+        gap: 35px;
+    }
+
+    .mobile-menu {
+        gap: 35px;
+    }
+
+    .mobile-menu li:after {
+        bottom: -36px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .header-main {
+        padding: 15px 0 15px;
+    }
+
+    .open-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        transition: 0.3s;
+        height: 36px;
+        width: 36px;
+        z-index: 111111;
+
+    }
+
+    .open-menu span {
+        display: flex;
+        background: #FFFFFF;
+        width: 24px;
+        height: 2px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .header-menu {
+        width: 100%;
+        position: fixed;
+        z-index: 99999;
+        top:-2000%;
+        right: 0;
+        transition: 1s;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("../img/tagilskaya-fon.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .mobile-menu a {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .transition-menu {
+        top:0;
+        transition: 1s;
+
+    }
+
+    .mobile-menu ul {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .mobile-menu li:after {
+        display: none;
+    }
+
+    header .btn {
+        padding: 24px 36px;
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 70px;
+
+    }
+
+    .mobile-menu {
+        margin-bottom: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding-top: 158px;
+        padding-bottom: 114px;
+        width: 100%;
+        overflow: auto;
+    }
+
+
+    .mobile-logo {
+        display: flex;
+        border-bottom: 1px solid #FFFFFF80;
+        position: absolute;
+        top: 0;
+        left: 16px;
+        width: calc(100% - 32px);
+        padding: 22px 0 24px;
+    }
+
+}
+@media (max-width: 700px){
+    header .btn {
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 600px){
+    .mobile-menu a {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .mobile-menu {
+        padding-top: 131px;
+    }
+}
+@media screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .mobile-menu {
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .header.hidden {
+        transform: translateY(-100%);
+    }
+}
+
+@media (max-width: 767px) {
+    header .btn {
+        padding: 18px 24px;
+        bottom: 20px;
+    }
+
+    .header-main {
+        padding: 24px 0 19px;
+    }
+
+    .mobile-logo {
+        padding: 22px 0 19px;
+    }
+
+    .mobile-menu ul {
+        gap: 23px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    header .btn {
+        max-width: 315px;
+        width: 100%;
+    }
+}

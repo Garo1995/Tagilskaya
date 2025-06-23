@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Alethia Pro';
+    src: local('Alethia Pro Italic'), local('AlethiaPro-Italic'), url('Alethiaproitalic.woff2') format('woff2'), url('Alethiaproitalic.woff') format('woff'), url('Alethiaproitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Alethia Pro';
+    src: local('Alethia Pro Regular'), local('AlethiaPro-Regular'), url('Alethiaproregular.woff2') format('woff2'), url('Alethiaproregular.woff') format('woff'), url('Alethiaproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('Aeroport-Light.eot');
+    src: local('Aeroport Light'), local('Aeroport-Light'),
+    url('Aeroport-Light.eot?#iefix') format('embedded-opentype'),
+    url('Aeroport-Light.woff2') format('woff2'),
+    url('Aeroport-Light.woff') format('woff'),
+    url('Aeroport-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('Aeroport.eot');
+    src: local('Aeroport'),
+    url('Aeroport.eot?#iefix') format('embedded-opentype'),
+    url('Aeroport.woff2') format('woff2'),
+    url('Aeroport.woff') format('woff'),
+    url('Aeroport.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('Aeroport-Medium.eot');
+    src: local('Aeroport Medium'), local('Aeroport-Medium'),
+    url('Aeroport-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Aeroport-Medium.woff2') format('woff2'),
+    url('Aeroport-Medium.woff') format('woff'),
+    url('Aeroport-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+

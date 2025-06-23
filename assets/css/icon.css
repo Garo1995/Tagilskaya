@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.icon {
+    display               : inline-block;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    background-color      : #000;
+    font-size: 120px;
+}
+
+
+
+.icon.icon-w {
+    mask-image         : url(../img/w.svg);
+    -webkit-mask-image : url(../img/w.svg);
+}
+.icon.icon-a {
+    mask-image         : url(../img/a.svg);
+    -webkit-mask-image : url(../img/a.svg);
+}
+.icon.icon-f {
+    mask-image         : url(../img/f.svg);
+    -webkit-mask-image : url(../img/f.svg);
+}
+.icon.icon-i {
+    mask-image         : url(../img/i.svg);
+    -webkit-mask-image : url(../img/i.svg);
+}
+.icon.icon-2 {
+    mask-image         : url(../img/2.svg);
+    -webkit-mask-image : url(../img/2.svg);
+}
+.icon.icon-b {
+    mask-image         : url(../img/b.svg);
+    -webkit-mask-image : url(../img/b.svg);
+}
