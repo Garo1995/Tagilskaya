@@ -870,17 +870,16 @@ a[href^="tel"] {
     bottom: 50px;
     left: 0;
 }
-.quarter-leave-request a{
+.quarter-leave-request button{
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 4px;
     text-decoration: underline;
     color: #FFFFFF;
+    background: unset;
 }
-.quarter-leave-request a:hover{
-    text-decoration: unset;
-}
+
 .quarter-leave-request p{
     color: #FFFFFF;
     font-weight: 400;
@@ -1014,7 +1013,9 @@ a[href^="tel"] {
 }
 
 
-
+.modal-fix{
+    overflow: hidden!important;
+}
 
 .line-highway-point{
     background: rgba(196,157,118, 0.55);
@@ -1307,6 +1308,7 @@ a[href^="tel"] {
 .your-style-picture img{
     width: 100%;
     transition: 0.4s;
+    object-fit: cover;
 }
 .your-style-picture:hover{
     width: 40%;
@@ -1435,6 +1437,7 @@ a[href^="tel"] {
 }
 .your-style-slider-pic img{
     width: 100%;
+    object-fit: cover;
 }
 .your-style-title{
     position: absolute;

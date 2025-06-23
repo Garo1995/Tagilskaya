@@ -289,12 +289,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 $('.your-style-picture').on('click', function (){
+    $('body').addClass('modal-fix')
     $('.your-style-modal').addClass('style-modal-open')
 })
 
 
 $('.style-modal-back').on('click', function (){
     $('.your-style-modal').removeClass('style-modal-open')
+    $('body').removeClass('modal-fix')
+
 })
 
 
