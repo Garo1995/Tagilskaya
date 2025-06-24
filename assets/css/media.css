@@ -2168,7 +2168,14 @@
     .world-renowned-photo {
         height: 148px;
     }
-
+   .be-the-first-btn .btn-line {
+           height: 65px;
+           padding: 20px 25px;
+           font-size: 19px;
+           width: 100%;
+           max-width: max-content;
+           gap: 15px;
+    }
     .renowned-arrow {
         display: none;
     }
@@ -2313,7 +2320,7 @@
     .park-losiny-three {
         left: 20px;
         bottom: auto;
-        top: 210px;
+        top: 197px;
     }
 
     .technolog-photo {
@@ -2351,14 +2358,16 @@
         padding: 14px 18px;
     }
     .ergonomic-box {
-        left: 80px;
+        left: auto;
+        right: 37px;
     }
     .ergonomic-four-box {
-        left: 30px;
+        right: 70px;
+        left: auto;
     }
-
     .ergonomic-five-box {
-        left: 76px;
+        left: auto;
+        right: 87px;
     }
 
 
@@ -2456,8 +2465,34 @@
         margin-top: 30px;
         padding: 16px 0 0 11px;
     }
+    .line-highway {
+        top: 186px;
+        right: 27px;
+    }
+    .park-losiny-three {
+        top: 190px;
+    }
 }
-
+@media (max-width: 390px){
+    .park-losiny-two {
+        left: 42px;
+        top: 114px;
+    }
+    .park-losiny-three {
+        top: 177px;
+        left: 12px;
+    }
+    .line-highway {
+        top: 167px;
+        right: 20px;
+    }
+    .ergonomic-four-box {
+        right: 37px;
+    }
+    .ergonomic-five-box {
+        right: 65px;
+    }
+}
 @media (max-width: 360px) {
     h1 {
         font-size: 48px;

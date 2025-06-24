@@ -1899,9 +1899,11 @@ a[href^="tel"] {
 .gallery-mobile{
     display: none;
 }
-.icon-plan{
+.icon-plan {
     display: none;
- }
+    width: 20px;
+    height: 20px;
+}
 .all-block-mob{
     display: none;
 }
