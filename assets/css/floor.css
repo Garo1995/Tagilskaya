@@ -28,7 +28,7 @@
 }
 .floor-svg-box path{
     transition: 0.3s;
-    fill-opacity: 0;
+    fill-opacity: 0.2;
     fill: rgb(255, 255, 255);
 
 }
