@@ -1857,15 +1857,18 @@
         background: #fff;
     }
     .your-style-title h3 {
-        font-size: 48px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 32px;
     }
     .style-modal-back {
         top: 110px;
         left: 16px;
     }
 
-
+    .your-style-title p {
+        font-size: 17px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width: 767px) {
