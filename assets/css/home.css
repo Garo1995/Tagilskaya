@@ -1015,19 +1015,19 @@ a[href^="tel"] {
     height: 112px;
     border-radius: 50%;
     position: relative;
-    -webkit-animation: sdb07 2.2s infinite;
-    animation: sdb07 2.2s infinite;
+    -webkit-animation: sdb07 2.4s infinite;
+    animation: sdb07 2.4s infinite;
     opacity: 0.2;
 }
 @-webkit-keyframes sdb07 {
     0% {
-        opacity: 0;
-    }
-    50% {
         opacity: 1;
     }
-    100% {
+    50% {
         opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 .line-highway-clicle-rel:before{
@@ -1039,13 +1039,10 @@ a[href^="tel"] {
     width: 64px;
     height: 64px;
     z-index: 2;
-
 }
-
 .modal-fix{
     overflow: hidden!important;
 }
-
 .line-highway-point{
     background: rgba(196,157,118, 0.55);
     width: 78px;
@@ -1054,16 +1051,18 @@ a[href^="tel"] {
     -webkit-animation: sdb08 2s infinite;
     animation: sdb08 2s infinite;
     opacity: 0.3;
+    position: absolute;
+
 }
 @-webkit-keyframes sdb08 {
     0% {
-        opacity: 0;
-    }
-    50% {
         opacity: 1;
     }
-    100% {
+    50% {
         opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 .technolog-mobs{
