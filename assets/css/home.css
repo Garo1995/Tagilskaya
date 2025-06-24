@@ -1003,6 +1003,11 @@ a[href^="tel"] {
 .line-highway-box{
     gap: 17px;
 }
+.line-highway-clicle-rel{
+    max-width: 112px;
+    width: 100%;
+    height: 112px;
+}
 .line-highway-clicle{
     background: rgba(196,157,118, 0.55);
     max-width: 112px;
@@ -1010,30 +1015,9 @@ a[href^="tel"] {
     height: 112px;
     border-radius: 50%;
     position: relative;
-}
-.line-highway-clicle:before{
-    content: "";
-    position: absolute;
-    background-image: url("../img/map-point.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 64px;
-    height: 64px;
-    z-index: 2;
-}
-
-.modal-fix{
-    overflow: hidden!important;
-}
-
-.line-highway-point{
-    background: rgba(196,157,118, 0.55);
-    width: 78px;
-    height: 78px;
-    border-radius: 50%;
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 @-webkit-keyframes sdb07 {
     0% {
@@ -1046,6 +1030,29 @@ a[href^="tel"] {
         opacity: 0;
     }
 }
+.line-highway-clicle-rel:before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/map-point.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    z-index: 2;
+
+}
+
+.modal-fix{
+    overflow: hidden!important;
+}
+
+.line-highway-point{
+    background: rgba(196,157,118, 0.55);
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
 .technolog-mobs{
     display: none;
 }
@@ -1152,7 +1159,7 @@ a[href^="tel"] {
 .technolog-secure-title{
     position: absolute;
     bottom: 100px;
-    left: 0;
+    left: 16px;
     gap: 20px;
     z-index: 2;
 }
