@@ -878,6 +878,8 @@ a[href^="tel"] {
     text-decoration: underline;
     color: #FFFFFF;
     background: unset;
+    font-family: 'Alethia Pro';
+
 }
 
 .quarter-leave-request p{
@@ -1193,22 +1195,43 @@ a[href^="tel"] {
     z-index: 5;
 }
 
+.secure-hover{
+    transition: 0.3s;
+    cursor: pointer;
+}
 .secure-office-circ, .ergonomic-circ{
     border-radius: 50%;
-    background: rgba(196,157,118, 0.10);
+    background: rgba(255, 255, 255, 0.10);
     max-width: 96px;
     width: 100%;
     height: 96px;
+    transition: 0.3s;
+
+}
+.secure-hover:hover .secure-office-circ{
+    background: rgba(196,157,118, 0.10);
+}
+.secure-hover:hover .ergonomic-circ{
+    background: rgba(196,157,118, 0.10);
 }
 .secure-office-numb, .ergonomic-numb{
     border-radius: 50%;
     width: 64px;
     height: 64px;
-    background: rgba(196,157,118, 0.25);
+    background: rgba(255, 255, 255, 0.50);
+    transition: 0.3s;
+
+
     color: #FFFFFF;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
+}
+.secure-hover:hover .secure-office-numb{
+    background: rgba(196,157,118, 0.25);
+}
+.secure-hover:hover .ergonomic-numb{
+    background: rgba(196,157,118, 0.25);
 }
 .secure-office-name{
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -1218,7 +1241,7 @@ a[href^="tel"] {
     margin-top: 16px;
 }
 .secure-office-name p, .ergonomic-name p{
-    color: #C49D76;
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
@@ -1227,7 +1250,12 @@ a[href^="tel"] {
     width: 100%;
 }
 
-
+.secure-hover:hover .secure-office-name p{
+    color: #C49D76;
+}
+.secure-hover:hover .ergonomic-name p{
+    color: #C49D76;
+}
 
 .ergonomic-box{
     max-width: 379px;
@@ -1243,15 +1271,8 @@ a[href^="tel"] {
     padding-bottom: 0;
     border-bottom: unset;
 }
-.ergonomic-name p{
-    color: #FFFFFF;
-}
-.ergonomic-circ{
-    background: rgba(255, 255, 255, 0.10);
-}
-.ergonomic-numb{
-    background: rgba(255, 255, 255, 0.50);
-}
+
+
 
 
 

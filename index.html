@@ -18,13 +18,15 @@
 <header id="mobileHeader" class="header">
     <div class="container">
         <div class="header-main G-align-center G-justify-between">
-            <a href="" onclick="location.reload(); return false;" class="logo G-flex">
+            <a href="" onclick="location.reload(); return false;" class="logo G-flex-column">
                 <img src="./assets/img/logo.svg" alt="logo">
+                <img src="./assets/img/logo-bot.svg" alt="logo">
             </a>
             <div class="header-menu G-align-center">
                 <div class="mobile-logo">
-                    <a href="" onclick="location.reload(); return false;" class="logo G-flex">
+                    <a href="" onclick="location.reload(); return false;" class="logo G-flex-column">
                         <img src="./assets/img/logo.svg" alt="logo">
+                        <img src="./assets/img/logo-bot.svg" alt="logo">
                     </a>
                 </div>
                 <div class="mobile-menu G-align-center">
@@ -745,7 +747,7 @@
                 <img src="./assets/img/technolog-mob.png" class="technolog-mobs" alt="technolog">
             </div>
 
-            <div class="secure-office-box G-flex">
+            <div class="secure-office-box secure-hover G-flex">
                 <div class="secure-office-circ G-center">
                     <div class="secure-office-numb G-center">01</div>
                 </div>
@@ -754,7 +756,7 @@
                 </div>
             </div>
 
-            <div class="ergonomic-box G-align-end G-justify-between">
+            <div class="ergonomic-box secure-hover G-align-end G-justify-between">
                 <div class="ergonomic-name">
                     <p>Эргономичные рабочие места</p>
                 </div>
@@ -762,7 +764,7 @@
                     <div class="ergonomic-numb G-center">02</div>
                 </div>
             </div>
-            <div class="ergonomic-three-box G-align-end G-flex-column">
+            <div class="ergonomic-three-box secure-hover G-align-end G-flex-column">
                 <div class="ergonomic-circ G-center">
                     <div class="ergonomic-numb G-center">03</div>
                 </div>
@@ -770,7 +772,7 @@
                     <p>Зоны для встреч с партнерами</p>
                 </div>
             </div>
-            <div class="ergonomic-four-box G-align-start G-flex-column">
+            <div class="ergonomic-four-box secure-hover G-align-start G-flex-column">
                 <div class="ergonomic-circ G-center">
                     <div class="ergonomic-numb G-center">04</div>
                 </div>
@@ -778,7 +780,7 @@
                     <p>Пространства для обучения и развития</p>
                 </div>
             </div>
-            <div class="ergonomic-five-box G-align-end G-flex-column">
+            <div class="ergonomic-five-box secure-hover G-align-end G-flex-column">
                 <div class="ergonomic-circ G-center">
                     <div class="ergonomic-numb G-center">05</div>
                 </div>
@@ -786,8 +788,6 @@
                     <p>Зоны отдыха и восстановления</p>
                 </div>
             </div>
-
-
 
         </div>
     </div>
@@ -4088,7 +4088,12 @@
         </div>
         <div class="floor-plan found-floor">
             <div class="container">
-                <div class="">
+                <div class="floor-plan-all">
+                    <div class="floor-plan-back">
+                        <div class="go-floor-style go-back-floor G-align-center"><i class="icon-arrow-rig-sm"></i>
+                            назад
+                        </div>
+                    </div>
                     <div class="filt-mob G-justify-end G-align-center">
                         <div class="go-floor-style close-plan-floor G-align-center">
                             <i class="icon-arrow-rig-sm"></i> Назад
@@ -4173,9 +4178,7 @@
                     <div class="found-title G-align-center G-justify-between">
                         <h2>найдено <span>43</span></h2>
                         <div class="filt-desc G-justify-end G-align-center">
-                            <div class="go-floor-style go-back-floor G-align-center"><i class="icon-arrow-rig-sm"></i>
-                                назад
-                            </div>
+
                             <button class="btn-select close-plan-floor G-center">Выбор на плане этажа <img
                                     src="./assets/img/buildings.svg" alt="buildings"></button>
                         </div>
@@ -4462,21 +4465,21 @@
             <span>Вернуться назад</span>
         </div>
         <div class="style-slider-pic-fl G-flex">
-            <div class="your-style-slider-pic G-flex">
+            <div data-val="gallery-one" class="open_modal your-style-slider-pic G-flex">
                 <img src="./assets/img/style-1.webp" alt="style">
                 <div class="your-style-title G-flex-column G-align-center">
                     <h3>WELCOME</h3>
-                    <p>ЗОНЫ ДЛЯ ВСТРЕЧПОСЕТИТЕЛЕЙ</p>
+                    <p>ЗОНЫ ДЛЯ ВСТРЕЧ ПОСЕТИТЕЛЕЙ</p>
                 </div>
             </div>
-            <div class="your-style-slider-pic G-flex">
+            <div data-val="gallery-two" class="open_modal your-style-slider-pic G-flex">
                 <img src="./assets/img/style-2.webp" alt="style">
                 <div class="your-style-title G-flex-column G-align-center">
                     <h3>ПЕРЕГОВОРНЫЕ</h3>
                     <p>ЭРГОНОМИЧНЫЕ РАБОЧИЕ ПРОСТРАНСТВА</p>
                 </div>
             </div>
-            <div class="your-style-slider-pic G-flex">
+            <div data-val="gallery-three" class="open_modal your-style-slider-pic G-flex">
                 <img src="./assets/img/style-3.webp" alt="style">
                 <div class="your-style-title G-flex-column G-align-center">
                     <h3>КОМФОРТНЫЕ</h3>
@@ -4488,7 +4491,7 @@
             <div class="swiper your-style-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="your-style-slider-pic G-flex">
+                        <div data-val="gallery-one" class="open_modal your-style-slider-pic G-flex">
                             <img src="./assets/img/style-1.webp" alt="style">
                             <div class="your-style-title G-flex-column G-align-center">
                                 <h3>WELCOME</h3>
@@ -4497,7 +4500,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="your-style-slider-pic G-flex">
+                        <div data-val="gallery-two" class="open_modal your-style-slider-pic G-flex">
                             <img src="./assets/img/style-2.webp" alt="style">
                             <div class="your-style-title G-flex-column G-align-center">
                                 <h3>ПЕРЕГОВОРНЫЕ</h3>
@@ -4506,7 +4509,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="your-style-slider-pic G-flex">
+                        <div data-val="gallery-three" class="open_modal your-style-slider-pic G-flex">
                             <img src="./assets/img/style-3.webp" alt="style">
                             <div class="your-style-title G-flex-column G-align-center">
                                 <h3>КОМФОРТНЫЕ</h3>
@@ -4578,6 +4581,55 @@
 </div>
 
 
+
+<div id="gallery-one" class="modal">
+    <div class="modal-content">
+        <div class="modal-gallery">
+            <div class="close"></div>
+            <div class="modal-gallery-pic">
+                <img src="./assets/img/image-from.png" alt="image">
+            </div>
+            <div class="modal-gallery-text">
+                <p>
+                    Удобные кресла и столы 140х70, соответствующие эргономическим требованиям. Welcome-зона для встречи посетителей, локеры и шкафы для поддержания порядка.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gallery-two" class="modal">
+    <div class="modal-content">
+        <div class="modal-gallery">
+            <div class="close"></div>
+            <div class="modal-gallery-pic">
+                <img src="./assets/img/image-from.png" alt="image">
+            </div>
+            <div class="modal-gallery-text">
+                <p>
+                    Лаунж-зоны с мягкой мебелью, зоны коллабораций и хот дески. Кабинеты, фокус-румы, переговорные, оборудованные ТВ и ВКС.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="gallery-three" class="modal">
+    <div class="modal-content">
+        <div class="modal-gallery">
+            <div class="close"></div>
+            <div class="modal-gallery-pic">
+                <img src="./assets/img/image-from.png" alt="image">
+            </div>
+            <div class="modal-gallery-text">
+                <p>
+                    Кофе-поинты со всем необходимым для комфортного перерыва. Кофе-леди и
+                    расходные материалы для кофе-поинтов.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="cookie">
     <p class="cookie__text">
         Мы обрабатываем cookies, чтобы сделать наш сайт удобнее и персонализированее для вас.
@@ -4641,7 +4693,8 @@
         scrollTrigger: {
             trigger: ".world-renowned",
             start: "top top",
-            end: () => "+=" + (window.innerHeight * totalSlides),
+            end: () => "+=" + (window.innerHeight * totalSlides / 3),
+
             scrub: 1,
             pin: true,
             onUpdate: self => {

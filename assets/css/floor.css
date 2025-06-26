@@ -247,7 +247,7 @@
     left: 0;
     z-index: 91;
     /*transition: 0.3s;*/
-    padding: 60px 0 0;
+    padding: 30px 0 0;
     overflow-y: auto;
     height: 100vh;
     opacity: 0;
@@ -836,7 +836,11 @@
     background: #FFFFFF0D;
     cursor: pointer;
 }
-
+.floor-plan-back{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
 .found-cnt-photo{
     display: flex;
     height: 270px;
@@ -1370,7 +1374,9 @@
         width: 12px;
         height: 12px;
     }
-
+    .floor-plan-back{
+        display: none;
+    }
     .floor-plan-param .parameters-btn {
         display: flex;
         position: relative;

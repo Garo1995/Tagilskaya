@@ -35,6 +35,8 @@ header.scrolled{
 
 .logo {
     white-space: nowrap;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .header-menu {
