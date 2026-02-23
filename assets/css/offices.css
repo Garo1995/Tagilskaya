@@ -1,0 +1,146 @@
+.maximum-benefits{
+    padding: 120px 0;
+}
+.maximum-benefits h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+.maximum-benefits-rel{
+    margin-top: 50px;
+    position: relative;
+}
+
+.maximum-benefits-slider .found-cnt-box{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.maximum-benefits-btn{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.maximum-benefits-btn .swiper-button-next, .maximum-benefits-btn .swiper-button-prev {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+}
+
+.maximum-benefits .found-cnt-info {
+    padding: 0 24px 24px;
+}
+
+.maximum-ben-price{
+    display: flex;
+    flex-direction: column;
+}
+.maximum-ben-price del{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    transition: 0.3s;
+
+}
+
+.maximum-ben-flex{
+    margin-top: 8px;
+    gap: 16px;
+}
+.maximum-ben-flex span{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    transition: 0.3s;
+
+}
+.maximum-ben-flex .price-discount{
+    font-size: 14px;
+    padding: 6px 16px;
+}
+
+.premises-found-info span{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+    transition: 0.3s;
+}
+.found-maximum .found-cnt-info h3 {
+    font-size: 20px;
+}
+
+.found-maximum:hover{
+    background: rgba(255, 255, 255, 1);
+}
+.found-maximum:hover .found-cnt-info h3 {
+    color: rgba(70, 81, 93, 1);
+}
+.found-maximum:hover .premises-found-info span {
+    color: rgba(70, 81, 93, 1);
+}
+.found-maximum:hover  .maximum-ben-price del{
+    color: rgba(70, 81, 93, 1);
+}
+.found-maximum:hover  .maximum-ben-flex span{
+    color: rgba(70, 81, 93, 1);
+}
+.found-maximum:hover .found-cnt-href {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(70, 81, 93, 1);
+}
+
+
+
+@media (max-width: 1399px){
+    .maximum-benefits h2 {
+        font-size: 47px;
+    }
+
+
+
+
+}
+@media (max-width: 1020px){
+    .maximum-benefits {
+        padding: 90px 0;
+    }
+    .maximum-benefits h2 {
+        font-size: 44px;
+    }
+
+}
+@media (max-width: 767px){
+    .maximum-benefits {
+        padding: 50px 0;
+    }
+    .maximum-benefits h2 {
+        font-size: 40px;
+    }
+    .maximum-benefits-btn{
+        display: none;
+    }
+    .maximum-benefits-slider{
+        margin-right: -16px;
+    }
+    .maximum-benefits .found-cnt-info {
+        padding: 0 16px 24px;
+    }
+    .maximum-ben-flex .price-discount {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 475px){
+    .maximum-benefits h2 {
+        font-size: 34px;
+    }
+}

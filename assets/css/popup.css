@@ -1,0 +1,253 @@
+.premises-square {
+    max-width: 649px;
+    width: 100%;
+}
+
+.prices-premises-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 42px;
+}
+.premises-square-photo {
+    margin-top: 0;
+}
+.prices-premises{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.prices-premises del{
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    text-transform: lowercase;
+}
+.prices-premises span{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 28px;
+}
+.prices-premises p{
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    text-transform: lowercase;
+
+}
+
+
+.technical-main{
+    margin-top: 24px;
+    padding-top: 24px;
+    position: relative;
+}
+.technical-main:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.0225) 13.6%, rgba(255, 255, 255, 0.15) 100%);
+}
+.technical-main h3{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+
+}
+.technical-charac{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.technical-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.technical-items p{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.premises-square-btn {
+    margin-top: 12px;
+}
+.square-price-premises{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 24px;
+    padding-top: 24px;
+}
+
+.square-price-premises:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.0225) 13.6%, rgba(255, 255, 255, 0.15) 100%);
+}
+.square-price-premises span{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 155%;
+}
+.square-price-premises del{
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 114%;
+    text-transform: uppercase;
+
+}
+
+.square-price-discount{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.price-discount{
+    background: rgba(196, 157, 118, 0.65);
+    padding: 7px 20px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.technical-main-flex{
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .prices-premises span {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .square-price-premises span{
+        font-size: 36px;
+        line-height: 125%;
+    }
+    .square-price-premises del{
+        font-size: 30px;
+
+    }
+
+    .square-price-discount{
+        gap: 20px;
+    }
+    .price-discount{
+        padding: 10px 20px;
+        font-size: 28px;
+    }
+    .premises-square {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 1020px){
+    .premises-square {
+        max-width: 760px;
+    }
+
+    .prices-premises-flex {
+        margin-top: 33px;
+    }
+    .technical-main-flex {
+        flex-direction: column-reverse;
+    }
+    .premises-square{
+        display: flex;
+        flex-direction: column;
+    }
+    .prices-premises-items{
+        order: 2;
+    }
+    .technical-main{
+        order: 3;
+    }
+    .technical-main:before{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .prices-premises span {
+        font-size: 24px;
+        line-height: 23px;
+    }
+    .prices-premises {
+        gap: 10px;
+    }
+    .prices-premises p {
+        font-size: 16px;
+    }
+    .technical-items p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+@media (max-width: 575px){
+    .prices-premises span {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .technical-items p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .square-price-premises del {
+        font-size: 20px;
+        line-height: 114%;
+    }
+    .technical-main h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .square-price-premises span {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .price-discount {
+        padding: 8px 16px;
+        font-size: 22px;
+    }
+    .square-price-discount {
+        gap: 16px;
+    }
+    .prices-premises del{
+        font-size: 16px;
+    }
+}

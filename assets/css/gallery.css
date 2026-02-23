@@ -1,0 +1,143 @@
+
+
+
+.section-gallery{
+    padding: 140px 0 64px;
+}
+.section-gallery h2{
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.section-gallery-slid{
+    display: flex;
+    margin-top: 56px;
+    gap: 16px;
+}
+.section-gallery-slid .great-option-slider{
+    max-width: 1358px;
+    width: 100%;
+
+}
+.section-gallery-slid .great-option-pic {
+    width: 100%;
+    height: 707px;
+    cursor: pointer;
+}
+.section-gallery-slid .great-sm-slider{
+    width: 100%;
+    height: 707px;
+
+    margin: 0;
+    max-width: 354px;
+}
+.section-gallery-slid .great-sm-option-pic {
+    max-width: 100%;
+    height: 100%;
+}
+
+.zoom-gallery{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 96px;
+    height: 96px;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.zoom-gallery:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 500px;
+}
+.zoom-gallery:after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 64px;
+    opacity: 0.45;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 500px;
+}
+
+
+
+@media (max-width: 1390px){
+    .section-gallery h2 {
+        font-size: 70px;
+    }
+    .section-gallery {
+        padding: 90px 0 64px;
+    }
+    .section-gallery-slid .great-option-pic {
+        height: 630px;
+    }
+    .section-gallery-slid .great-sm-slider {
+        height: 630px;
+    }
+}
+
+@media (max-width: 1299px){
+    .section-gallery-slid .great-sm-slider {
+        height: 538px;
+        max-width: 280px;
+    }
+    .section-gallery-slid .great-option-pic {
+        height: 538px;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .section-gallery h2 {
+        font-size: 54px;
+    }
+    .section-gallery-slid{
+        flex-direction: column;
+        margin-top: 38px;
+    }
+    .section-gallery-slid .great-sm-slider {
+        height: auto;
+        max-width: 100%;
+    }
+    .section-gallery-slid .great-sm-option-pic {
+        max-width: 100%;
+        height: 132px;
+    }
+}
+@media (max-width: 575px){
+    .section-gallery-slid .great-sm-option-pic {
+        max-width: 100%;
+        height: 90px;
+    }
+    .section-gallery-slid .great-option-pic {
+        height: 305px;
+    }
+
+    .zoom-gallery{
+        top: 16px;
+        right: 16px;
+        width: 66px;
+        height: 66px;
+    }
+
+    .zoom-gallery:after{
+        width: 44px;
+        height: 44px;
+    }
+    .section-gallery {
+        padding: 64px 0 64px;
+    }
+
+}

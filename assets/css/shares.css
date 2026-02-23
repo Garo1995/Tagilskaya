@@ -1,0 +1,95 @@
+.block-shares{
+    padding: 80px 0;
+
+}
+.block-shares-slider{
+    width: 100%;
+}
+
+.block-shares-box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    min-height: 156px;
+    justify-content: space-between;
+    padding: 24px 42px 24px 32px;
+}
+.block-shares-box h3{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+.block-shares-box p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+}
+.block-shares-box:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 39px;
+    width: 206px;
+    height: 100%;
+    background-image: url("../img/w-icon-shares.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.block-shares-box .architecture-arrow{
+    position: absolute;
+    top: auto;
+    right: 32px;
+    bottom: 24px;
+    background: rgba(196, 157, 118, 0.35);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .block-shares-box .architecture-arrow {
+        right: 23px;
+        bottom: 24px;
+    }
+    .block-shares-box h3 {
+        font-size: 26px;
+    }
+
+}
+@media (max-width: 1399px){
+    .block-shares-box {
+        min-height: 163px;
+        padding: 24px 48px 24px 24px;
+    }
+    .block-shares-box h3 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 1199px){
+    .block-shares .container{
+        padding-right: 0;
+    }
+    .block-shares {
+        padding: 32px 0;
+    }
+}
+@media (max-width: 575px){
+    .block-shares-box .architecture-arrow {
+        right: 19px;
+        bottom: 16px;
+        width: 42px;
+        height: 42px;
+    }
+}
